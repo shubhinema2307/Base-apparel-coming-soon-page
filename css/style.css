@@ -1,0 +1,220 @@
+/* common css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: 'Josefin Sans', sans-serif;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* basic css */
+* {
+    box-sizing: border-box;
+  }
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+	max-width: 100%;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* img {
+    max-width: 100%;
+    height: auto;
+} */
+
+.info-div {
+    width: 60%;
+    background-image: url('../images/bg-pattern-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 75px 220px 0 165px;
+    height: 100vh;
+}
+
+.img-div {
+    width: 40%;
+    height: 100vh;
+}
+.img-div .logo-img, .img-div .hero-img-mobile {
+    display: none;
+}
+
+.img-div .hero-img-desktop, .info-div .info-logo {
+    display: block;
+}
+
+.img-div .hero-img {
+    width: 100%;
+}
+
+.info-div .logo-info {
+    margin-bottom: 140px;
+}
+
+.info-div .info h1 {
+    font-size: 80px;
+    line-height: 80px;
+    color: #CE9898;
+    font-weight: 300;
+    letter-spacing: 20px;
+}
+
+.info-div .info h1 span{
+    line-height: 80px;
+    color: #423A3A;
+    font-weight: 600;
+}
+
+.info-div .info p {
+    font-size: 18px;
+    line-height: 28px;
+    color:#CE9898;
+}
+
+.info-div .email-form {
+    margin-top: 50px;
+}
+
+.info-div .email-form input {
+    border: 1px solid #CE9898;
+    border-radius: 30px;
+    padding:20px;
+    width: 100%;
+}
+
+.info-div .email-form {
+    position: relative;
+}
+
+.info-div .email-form .arrow-btn {
+    background-image: linear-gradient(45deg, rgba(255,0,0,0), rgba(238,139,139,1));
+    padding: 17px 40px;
+    text-align: center;
+    border-radius: 30px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.email-input #icon-error{
+    position: absolute;
+    right: 105px;
+    top: 15px;
+    display: none;
+}
+
+.email-input #error-msg{
+    display: none;
+    color: #EE8B8B;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .row {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .info-div {
+        width: 100%;
+        background-image: url('../images/bg-pattern-desktop.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 60px 30px 60px 30px;
+        text-align: center;
+        height: auto;
+    }
+
+    .img-div {
+        width: 100%;
+        height:auto;
+    }
+
+    .info-div .logo-info, .img-div .hero-img-desktop {
+        display: none;
+    }
+
+    .img-div .logo-img, .img-div .hero-img-mobile {
+        display: block;
+    }
+
+    .img-div .hero-img-mobile{
+        width: 100%;
+    }
+
+    .img-div .logo-img {
+        margin: 30px;
+    }
+
+    .info-div .info h1 {
+        font-size: 40px;
+        line-height: 45px;
+        letter-spacing: 12px;
+        font-weight: 400;
+    }
+    
+    .info-div .info h1 span{
+        line-height: 40px;
+    }
+    
+    .info-div .info p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+
+
+
+}

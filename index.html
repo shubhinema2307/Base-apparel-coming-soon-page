@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<section class="base-apparel"> 
+    <div class="row">
+      <div class="info-div">
+        <div class="container">
+          <div class="logo-info">
+            <img src="images/logo.svg" alt="logo">
+          </div>
+          <div class="info">
+            <h1>WE'RE <br/><span>COMING<br> SOON</span></h1>
+            <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email 
+              below to stay up-to-date with announcements and our launch deals.</p>
+          </div>
+          <div class="email-form">
+            <form action="">
+              <div class="email-input">
+                <div class="arrow-btn" onclick="form_validation();"><img src="images/icon-arrow.svg" alt="" srcset=""></div>
+                <input type="email" name="email" id="email" placeholder="Email Address">
+                <img src="images/icon-error.svg" alt="" srcset="" id="icon-error">
+                <p id="error-msg">Please provide a valid email</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="img-div">
+        <div class="logo">
+          <img src="images/logo.svg" alt="logo" class="logo-img">
+        </div>
+        <img src="images/hero-desktop.jpg" alt="" srcset="" class="hero-img-desktop">
+        <img src="images/hero-mobile.jpg" alt="" srcset="" class="hero-img-mobile">
+      </div>
+    </div>
+</section>
+</body>
+</html>
+
+<script src="js/function.js"></script>
